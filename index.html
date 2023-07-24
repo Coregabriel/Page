@@ -2,6 +2,7 @@
 <html>
 
     <head>
+      <script src="behaviour.json"></script>
         <title>My page</title>
        <style>
         h1{
@@ -18,6 +19,8 @@
             }
         </style>
         <style>
+          #sidebar.open {
+            
             .sidebar {
               width: 200px;
               height: 500px;
@@ -25,7 +28,8 @@
               padding: 50px;
               float: right;
             }
-        
+          }
+
             .content {
               margin-right: auto;
               padding: auto;
@@ -122,7 +126,7 @@
               
                 <hr>
                 <div class="container1">
-                  <button id="sidebar-toggle">MORE</button>
+                  <button id="sidebar-toggle" onclick="toggleSidebar()">MORE</button>
                   <div id="sidebar">
                     <ul>
                       <li><a href="#">LANGUAGES</a></li>
